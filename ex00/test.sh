@@ -4,17 +4,18 @@ CONVERTER='./convert'
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 NORMAL='\033[0m'
+PARAM=$1
 
 function test()
 {
 	printf "\n$GREEN$CONVERTER $1$NORMAL\n"
-	$CONVERTER $1
+	$PARAM$CONVERTER $1
 }
 
 function wrongtest()
 {
 	printf "\n$RED$CONVERTER $1$NORMAL\n"
-	$CONVERTER $1
+	$PARAM$CONVERTER $1
 }
 
 printf "\n$GREEN===make===$NORMAL\n"
