@@ -17,6 +17,9 @@ function wrongtest()
 	$CONVERTER $1
 }
 
+printf "\n$GREEN$===make===$NORMAL\n"
+make
+
 printf "\n$RED===WRONG ARGUMENTS===\n$NORMAL"
 wrongtest
 wrongtest ".f"
@@ -53,3 +56,6 @@ test "2147483648"
 test "2147483648.1"
 test "-2147483649"
 test "-2147483648"
+
+printf "\n$GREEN$===make fclean===$NORMAL\n"
+make fclean
