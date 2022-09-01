@@ -25,6 +25,7 @@ wrongtest "7f"
 wrongtest "7.77.7"
 wrongtest "-7.12f1"
 
+
 printf "\n$GREEN===CORRECT ARGUMENTS===\n$NORMAL"
 test "0"
 test "nan"
