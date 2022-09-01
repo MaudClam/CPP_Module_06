@@ -40,8 +40,8 @@ int main() {
 	deserialized = deserialize(serialized);
 	
 	std::cout	<< "\ndata: " << std::boolalpha
-				<< data.isIt << ", "
-				<< data.str << ", "
+				<< data.isIt << ", \""
+				<< data.str << "\", "
 				<< data.doubleVar << std::endl;
 
 	std::cout << "\ndata: " << &data << std::endl;
@@ -49,8 +49,8 @@ int main() {
 	std::cout << "deserialized: " << deserialized << std::endl;
 
 	std::cout	<< "\ndeserialized: " << std::boolalpha
-				<< deserialized->isIt << ", "
-				<< deserialized->str << ", "
+				<< data.isIt << ", \""
+				<< data.str << "\", "
 				<< deserialized->doubleVar << std::endl;
 
 	std::cout << std::endl;
