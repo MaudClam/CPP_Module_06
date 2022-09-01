@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <iostream>
+#include <limits>
 
 typedef struct	s_Data
 {
