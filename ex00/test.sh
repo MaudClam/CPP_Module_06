@@ -17,7 +17,7 @@ function wrongtest()
 	$CONVERTER $1
 }
 
-printf "\n$GREEN$===make===$NORMAL\n"
+printf "\n$GREEN===make===$NORMAL\n"
 make
 
 printf "\n$RED===WRONG ARGUMENTS===\n$NORMAL"
@@ -52,10 +52,11 @@ test "-42.5"
 test "42000000000000000000000000000000000000.42"
 test "420000000000000000000000000000000000000.42"
 test "420000000000000000000000000000000000000.42f"
+test "420000000000000000000000000000000000000"
 test "2147483648"
 test "2147483648.1"
 test "-2147483649"
 test "-2147483648"
 
-printf "\n$GREEN$===make fclean===$NORMAL\n"
+printf "\n$GREEN===make fclean===$NORMAL\n"
 make fclean
